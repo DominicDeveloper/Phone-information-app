@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center|top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txSerial"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txModel"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txID"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txManufacturer"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txBrand"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txType"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txUser"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txBase"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txIncremental"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txSDK"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txBoard"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txBrand2"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txHost"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txFingerprint"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+    <TextView
+        android:id="@+id/txRelease"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+    <TextView
+        android:id="@+id/txVersionCode"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:text="World"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:text="GET DEVICE INFORMATIONS"
+        android:layout_marginTop="21dp"
+        android:id="@+id/btnGetInfo"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
