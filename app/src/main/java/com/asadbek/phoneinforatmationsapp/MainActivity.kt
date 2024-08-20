@@ -14,7 +14,6 @@ import com.asadbek.phoneinforatmationsapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-
     // HardwareIds - Build.SERIAL deprektga tushgan shuning uchun SuppressLint ga qo`shilgan
     @SuppressLint("SetTextI18n", "HardwareIds")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,22 +21,26 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnGetInfo.setOnClickListener {
-            binding.txSerial.text = "Serial: ${Build.SERIAL}"
-            binding.txModel.text = "Model: ${Build.MODEL}"
-            binding.txID.text = "Id: ${Build.ID}"
-            binding.txManufacturer.text = "Manufacturer: ${Build.MANUFACTURER}"
-            binding.txBrand.text = "Brand: ${Build.BRAND}"
-            binding.txType.text = "Type: ${Build.TYPE}"
-            binding.txUser.text = "User: ${Build.USER}"
-            binding.txBase.text = "Base: ${Build.VERSION_CODES.BASE}"
-            binding.txIncremental.text = "Incremental: ${Build.VERSION.INCREMENTAL}"
-            binding.txSDK.text = "Sdk: ${Build.VERSION.SDK}"
-            binding.txBoard.text = "Board: ${Build.BOARD}"
-            binding.txHost.text = "Host: ${Build.HOST}"
-            binding.txFingerprint.text = "Fingerprint: ${Build.FINGERPRINT}"
-            binding.txVersionCode.text = "Version code: ${Build.VERSION.RELEASE}"
+        binding.btnGet.setOnClickListener {
+            getAllData()
         }
 
+    }
+    @SuppressLint("SetTextI18n", "HardwareIds")
+    private fun getAllData(){
+        binding.tvSerial.text = "Seriasi: ${Build.SERIAL}" // seriya raqami
+        binding.tvModel.text = "Modeli: ${Build.MODEL}" // telefon nomi
+        binding.tvId.text = "Id: ${Build.ID}" // id raqami
+        binding.tvManufacturer.text = "Nomi: ${Build.MANUFACTURER}" // telefon nomi
+        binding.tvBrand.text = "Brend: ${Build.BRAND}" // telefon brend nomi
+        binding.tvType.text = "Turi: ${Build.TYPE}" // foydalanish turi // odatda foydalanuvchi(user) bo`ladi
+        binding.tvUser.text = "Foydalanuvchi: ${Build.USER}" // foydalanuvchi holati (builder)
+        binding.tvVersionCodeBase.text = "Base versiya: ${Build.VERSION_CODES.BASE}" // dastur versiyasi
+        binding.tvIncremental.text = "Incremental: ${Build.VERSION.INCREMENTAL}" // telefon proshivka versiyasi
+        binding.tvSdk.text = "SDK: ${Build.VERSION.SDK}" // telefon sdksi
+        binding.tvBoard.text = "Board: ${Build.BOARD}" // telefon versiyasining nomi 6.0 larda marshmallow bo`ladi
+        binding.tvHost.text = "Hosti: ${Build.HOST}" // host nomi
+        binding.tvFingerprint.text = "Barmoq izi skaneri: ${Build.FINGERPRINT}" // barmoq izi skaneri saqlanadigan joy yoki barmoq izi sknari majud bo`lgan joy
+        binding.tvRelease.text = "Chiqarilgan versiya: ${Build.VERSION.RELEASE}" // telefon versiyasi
     }
 }
